@@ -12,6 +12,7 @@ export class RegisterFormComponent {
   emailControl = new FormControl('', [Validators.required, Validators.email])
   passwordControl = new FormControl('', [Validators.required, Validators.minLength(6)])
   repeatPasswordControl = new FormControl('', [Validators.required, Validators.minLength(6)])
+  checkControl = new FormControl([Validators.required])
 
   registerForm = new FormGroup({
     firstName : this.firstNameControl,
@@ -19,6 +20,7 @@ export class RegisterFormComponent {
     email : this.emailControl,
     password : this.passwordControl,
     repeatPassword : this.repeatPasswordControl,
+    check : this.checkControl,
   }, {
     validators: []
   })

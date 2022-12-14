@@ -5,11 +5,15 @@
 main{
     padding-top: 50px;
     height: 100vh;
-    background-color: #eac7cd;
+    background-color: #e6fcd9;
 }
 
 .card{
-    background-color: #f2dade;
+    background-color:  #cdf2d6;
+}
+
+.container{
+    width: 50%;
 
 }
 
