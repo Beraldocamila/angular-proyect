@@ -10,9 +10,9 @@ export class RegisterFormComponent {
   firstNameControl = new FormControl('',[Validators.required])
   lastNameControl = new FormControl('', [Validators.required])
   emailControl = new FormControl('', [Validators.required, Validators.email])
-  passwordControl = new FormControl('', [Validators.required, Validators.minLength(6)])
-  repeatPasswordControl = new FormControl('', [Validators.required, Validators.minLength(6)])
-  checkControl = new FormControl([Validators.required])
+  passwordControl = new FormControl('', [Validators.required, Validators.minLength(6), this.matchPasswordValidators])
+  repeatPasswordControl = new FormControl('', [Validators.required, Validators.minLength(6), this.matchPasswordValidators])
+  checkControl = new FormControl(false, [Validators.requiredTrue])
 
   registerForm = new FormGroup({
     firstName : this.firstNameControl,
@@ -22,7 +22,9 @@ export class RegisterFormComponent {
     repeatPassword : this.repeatPasswordControl,
     check : this.checkControl,
   }, {
-    validators: []
+    validators: [
+      this.matchPasswordValidators
+    ]
   })
 
   matchPasswordValidators(){
@@ -32,7 +34,7 @@ export class RegisterFormComponent {
           passwordsMatch: true
         }
       }
-      return null
+      return false
     }
   }
 
