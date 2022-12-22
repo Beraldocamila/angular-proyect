@@ -8,6 +8,9 @@ import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 import { SectionComponent } from './Components/section/section.component';
 import { RegisterFormComponent } from './Components/register-form/register-form.component';
 import { ValidatorsErrorsComponent } from './Components/validators-errors/validators-errors.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
+import { StudentsPageComponent } from './Components/students-page/students-page.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { ValidatorsErrorsComponent } from './Components/validators-errors/valida
     ToolbarComponent,
     SectionComponent,
     RegisterFormComponent,
-    ValidatorsErrorsComponent
+    ValidatorsErrorsComponent,
+    StudentsPageComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
