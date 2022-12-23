@@ -1,12 +1,11 @@
 nav{
     width: auto;
-    background-color: rgba(126, 184, 149, 0.601);
+    background-color:#59bf4b;
     height: 100%;
 }
 
 nav a{
-    color: black;
+    color: white;
     font-size: 20px;
     text-align: left;
 }
-
