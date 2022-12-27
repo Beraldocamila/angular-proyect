@@ -1,8 +1,24 @@
 div{
-    padding: 150px 150px 0 150px;
+    padding: 50px 150px 0 150px;
     text-align: center;
 }
 table {
     width: 100%;
     background-color: #3f9f32;
+}
+
+table th, table td{
+    text-align: center;
+    color: black;
+
+}
+
+.add{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+table th{
+    background-color: #285f21;
+
 }

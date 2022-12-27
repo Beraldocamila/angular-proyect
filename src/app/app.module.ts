@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { StudentsPageComponent } from './Components/students-page/students-page.component';
 import { MenuComponent } from "./Components/menu/menu.component";
+import { StudentDialogComponent } from './Components/student-dialog/student-dialog.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MenuComponent } from "./Components/menu/menu.component";
         RegisterFormComponent,
         ValidatorsErrorsComponent,
         StudentsPageComponent,
-        MenuComponent
+        MenuComponent,
+        StudentDialogComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
